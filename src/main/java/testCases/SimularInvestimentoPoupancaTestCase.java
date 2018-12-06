@@ -46,12 +46,24 @@ public class SimularInvestimentoPoupancaTestCase {
 		String screenshotArquivo1 = IMAGEPATH + Generator.dataHoraParaArquivo() +  ".png";
 		Screenshot.Tirar(driver, screenshotArquivo1);
 		Report.log(Status.PASS, "Digitou valor a ser aplicado", screenshotArquivo1);
+		
+		simular.setValorInvestimento(datapool.getValue("valorInvestir"));
+		String screenshotArquivo2 = IMAGEPATH + Generator.dataHoraParaArquivo() +  ".png";
+		Screenshot.Tirar(driver, screenshotArquivo2);
+		Report.log(Status.PASS, "Digitou valor a ser a investido", screenshotArquivo2);
+		
+		simular.setMesesInvestimento(datapool.getValue("tempo"));
+		String screenshotArquivo3 = IMAGEPATH + Generator.dataHoraParaArquivo() +  ".png";
+		Screenshot.Tirar(driver, screenshotArquivo3);
+		Report.log(Status.PASS, "Digitou tempo de aplicação", screenshotArquivo3);
+		
+		simular.clicarSimular();
 		//validar.validarMensagemErro("Ocorreu um erro de conexão. Por favor, verifique seu dados e tente novamente.");	
 	}
 	
 	@After
 	public void tearDown() {
 		Report.close();
-		this.driver.quit();
+		//this.driver.quit();
 	}
 }

@@ -16,6 +16,18 @@ public class SimularInvestimentoPoupancaAppObjects {
 		return driver.findElement(By.id("valorAplicar"));
 	}
 	
+	public WebElement getValorInvestimento () {
+		return driver.findElement(By.id("valorInvestir"));
+	}
+	
+	public WebElement getMesesInvestimento () {
+		return driver.findElement(By.id("tempo"));
+	}
+	
+	public WebElement getSimularButton () {
+		return driver.findElement(By.className("simular"));
+	}
+	
 	//btn btnAmarelo btnSimular
 
 }

@@ -18,5 +18,17 @@ public class SimularInvestimentoPoupancaTasks {
 	public void setValorAplicar (String valoraplicado) {
 		this.simular.getValorAplicarTextField().sendKeys(valoraplicado);
 	}
+	
+	public void setValorInvestimento (String valorInvestir) {
+		this.simular.getValorInvestimento().sendKeys(valorInvestir);
+	}
+	
+	public void setMesesInvestimento (String tempo) {
+		this.simular.getMesesInvestimento().sendKeys(tempo);
+	}
+	
+	public void clicarSimular () {
+		this.simular.getSimularButton().click();
+	}
 
 }
