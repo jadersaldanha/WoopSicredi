@@ -47,7 +47,7 @@ Esse projeto de automação foi idealizado com o foco em diversas possibilidades
 		- appObjects
 		- tasks
 		- testCases
-		- regressiontestSuite
+		- regressionTestSuite
 		- verificationPoints
 	- /src/main/resources
 		- datapools
