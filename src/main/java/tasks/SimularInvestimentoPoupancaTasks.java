@@ -1,9 +1,10 @@
 package tasks;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import appObjects.SimularInvestimentoPoupancaAppObjects;
-
 
 public class SimularInvestimentoPoupancaTasks {
 	
@@ -30,5 +31,14 @@ public class SimularInvestimentoPoupancaTasks {
 	public void clicarSimular () {
 		this.simular.getSimularButton().click();
 	}
+	
+	public String mensagemInvestimento () {
+		WebDriverWait wait = new WebDriverWait(driver, 60);
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("/html/body/div[3]/div/div/div[1]/div/div[2]/span[1]"))));
+		return this.simular.getMensagemInvestimento().getText();
+	}
 
+	public String valorInvestimentoFinal () {
+		return this.simular.getValorInvestimentoFinal().getText();
+	}
 }

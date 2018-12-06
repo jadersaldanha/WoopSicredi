@@ -21,7 +21,7 @@ public class SimularInvestimentoPoupancaApiTestCase {
 	}
 	
 	@Test
-	public void put_test() {
+	public void testeGetSicrediAPI() {
 		Response response = given()
 				.contentType(ContentType.JSON)
 				.accept(ContentType.JSON)				

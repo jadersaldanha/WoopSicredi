@@ -6,7 +6,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-
 import com.aventstack.extentreports.Status;
 
 import support.Config;
@@ -17,6 +16,7 @@ import support.IDatapool;
 import support.Report;
 import support.Screenshot;
 import tasks.SimularInvestimentoPoupancaTasks;
+import verificationPoints.ValidarValoresVerificationPoint;
 
 public class SimularInvestimentoPoupancaTestCase {
 	private static final String SYSTEM_URL = Config.get("environment.sicredi.prod");
@@ -25,7 +25,7 @@ public class SimularInvestimentoPoupancaTestCase {
 	private WebDriver driver;
 	private SimularInvestimentoPoupancaTasks simular; 
 	private IDatapool datapool;
-	//private ValidarAcessodeUsuarioVerificationPoint validar;
+	private ValidarValoresVerificationPoint validar;
 	
 	@Before
 	public void setUp() {
@@ -38,6 +38,7 @@ public class SimularInvestimentoPoupancaTestCase {
 		
 		datapool = new CsvDatapool(DATAPOOL);
 		this.simular = new SimularInvestimentoPoupancaTasks(driver);
+		validar = new ValidarValoresVerificationPoint();
 	}
 	
 	@Test
@@ -58,7 +59,13 @@ public class SimularInvestimentoPoupancaTestCase {
 		Report.log(Status.PASS, "Digitou tempo de aplicação", screenshotArquivo3);
 		
 		simular.clicarSimular();
-		//validar.validarMensagemErro("Ocorreu um erro de conexão. Por favor, verifique seu dados e tente novamente.");	
+		
+		String mensagemrecebida = simular.mensagemInvestimento();
+		String mensagemesperada = "Em 24 meses você terá guardado";
+		validar.validarMensagemdeTempoeInvestimento(mensagemrecebida, mensagemesperada);
+		String valorRecebido = simular.valorInvestimentoFinal();
+		String valoresperado = "R$ 2.564";
+		validar.validarValorTotalInvestimento(valorRecebido, valoresperado);
 	}
 	
 	@After

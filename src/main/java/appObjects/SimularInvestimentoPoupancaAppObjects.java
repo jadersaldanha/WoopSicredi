@@ -28,6 +28,11 @@ public class SimularInvestimentoPoupancaAppObjects {
 		return driver.findElement(By.className("simular"));
 	}
 	
-	//btn btnAmarelo btnSimular
-
+	public WebElement getMensagemInvestimento () {
+		return driver.findElement(By.xpath("/html/body/div[3]/div/div/div[1]/div/div[2]/span[1]"));
+	}
+	
+	public WebElement getValorInvestimentoFinal () {
+		return driver.findElement(By.xpath("/html/body/div[3]/div/div/div[1]/div/div[2]/span[2]"));
+	}
 }
