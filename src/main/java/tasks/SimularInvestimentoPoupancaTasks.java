@@ -41,4 +41,8 @@ public class SimularInvestimentoPoupancaTasks {
 	public String valorInvestimentoFinal () {
 		return this.simular.getValorInvestimentoFinal().getText();
 	}
+	
+	public String mensagemValorMinimo () {
+		return this.simular.getMensagemValorMinimo().getText();
+	}
 }

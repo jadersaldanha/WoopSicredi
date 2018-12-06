@@ -10,11 +10,13 @@ import org.junit.runners.Suite.SuiteClasses;
 import api.SimularInvestimentoPoupancaApiTestCase;
 import support.Report;
 import testCases.SimularInvestimentoPoupancaTestCase;
+import testCases.SimularInvestimentoPoupancaValorMinimoTestCase;
 
 
 @RunWith(Suite.class)
 @SuiteClasses({
 	SimularInvestimentoPoupancaTestCase.class,
+	SimularInvestimentoPoupancaValorMinimoTestCase.class,
 	SimularInvestimentoPoupancaApiTestCase.class
 })
 

@@ -71,6 +71,6 @@ public class SimularInvestimentoPoupancaTestCase {
 	@After
 	public void tearDown() {
 		Report.close();
-		//this.driver.quit();
+		this.driver.quit();
 	}
 }
