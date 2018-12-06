@@ -40,7 +40,7 @@ Response:
 
 Esse projeto de automação foi idealizado com o foco em diversas possibilidades para casos de teste, considerando a UI e a API. Contempla a geração de relatórios de evidência de interação e preenchimento de dados com elementos da interface, além o teste de API que verifica o status do serviço e a resposta do Get. 
 
-## Organiza-se da seguinte forma:
+## Arquitetura do projeto
 - Sicredi.com.br
 	- /src/main/java
 		- api
