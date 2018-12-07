@@ -65,7 +65,7 @@ Para executar o projeto é muito fácil \o/ basta seguir os passos, dependendo d
 
 Por linha de comando:
 - Clonar o repositório: git clone https://github.com/jadersaldanha/WoopSicredi;
-- Na pasta do projeto: mvn test.
+- Na pasta do projeto: java -jar SimularInvestimentoPoupancaRegressionTestSuite.jar.
 
 Por UI:
 - Fazer o download do projeto Sicredi.com.br;
