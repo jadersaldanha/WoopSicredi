@@ -1,30 +1,30 @@
 # WoopSicredi
 
-Ol√°!
+Ol·!
 
-Bem-vindo(a) ao projeto de automa√ß√£o escrito na linguagem Java para a Simula√ß√£o de Investimento
-na Poupan√ßa do Sicredi! \o/
+Bem-vindo(a) ao projeto de automaÁ„o escrito na linguagem Java para a SimulaÁ„o de Investimento
+na PoupanÁa do Sicredi! \o/
 
 Chegou a hora de poupar! Mas quanto? Em quanto tempo? Como posso saber?
 
-Nosso associado gostaria de simular o investimento na poupan√ßa para descobrir qual o valor ideal e quanto ele vai poupar no prazo que escolher.
+Nosso associado gostaria de simular o investimento na poupanÁa para descobrir qual o valor ideal e quanto ele vai poupar no prazo que escolher.
 
 Vamos construir um simulador de investimentos?
 
-Hist√≥ria
-Com o prop√≥sito de Simular um Investimento na Poupan√ßa
+HistÛria
+Com o propÛsito de Simular um Investimento na PoupanÁa
 como um Associado,
-eu gostaria de preencher o formul√°rio de simula√ß√£o
-e ver a tabela de resultado com M√™s e Valor.
+eu gostaria de preencher o formul·rio de simulaÁ„o
+e ver a tabela de resultado com MÍs e Valor.
 
-Crit√©rio de aceita√ß√£o:
+CritÈrio de aceitaÁ„o:
 
-O associado preencher todos os campos corretamente e visualizar o formul√°rio de simula√ß√£o
-O associado preencher o Valor inferior a ‚Äú20.00‚Äù e receber a mensagem de orienta√ß√£o ‚ÄúValor m√≠nimo de 20.00‚Äù.
+O associado preencher todos os campos corretamente e visualizar o formul·rio de simulaÁ„o
+O associado preencher o Valor inferior a ì20.00î e receber a mensagem de orientaÁ„o ìValor mÌnimo de 20.00î.
 Url: https://www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/
 
 API:
-A API do Simulador de Investimento est√° dispon√≠vel em:
+A API do Simulador de Investimento est· disponÌvel em:
 
 Get:
 Url: http://5b847b30db24a100142dce1b.mockapi.io/api/v1/simulador
@@ -36,9 +36,9 @@ Response:
 "valor": ["2.802", "3.174", "3.564", "3.971"]
 }
 
-## Solu√ß√£o Proposta
+## SoluÁ„o Proposta
 
-Esse projeto de automa√ß√£o foi idealizado com o foco em diversas possibilidades para casos de teste, considerando a UI e a API. Contempla a gera√ß√£o de relat√≥rios de evid√™ncia de intera√ß√£o e preenchimento de dados com elementos da interface, al√©m o teste de API que verifica o status do servi√ßo e a resposta do Get. 
+Esse projeto de automaÁ„o foi idealizado com o foco em diversas possibilidades para casos de teste, considerando a UI e a API. Contempla a geraÁ„o de relatÛrios de evidÍncia de interaÁ„o e preenchimento de dados com elementos da interface, alÈm o teste de API que verifica o status do serviÁo e a resposta do Get. 
 
 ## Arquitetura do projeto
 - Sicredi.com.br
@@ -57,21 +57,26 @@ Esse projeto de automa√ß√£o foi idealizado com o foco em diversas possibilidades
 		- screenshots
 		
 ## Onde:
-- appObjects representa o pacote com as classes que identificam elementos da interface web do portal. tasks: tarefas que atuam nos elementos da interface identificados. testCases pacote que define as classes principais dos casos de teste automatizados de UI. RegressiontestSuite conjunto que chama as classes de caso de teste que desejar. verificaitonPoints onde est√£o as classes para valida√ß√£o de dados e/ou elementos de interface, etc. Na pasta datapools est√£o os arquivos necess√°rios para a utiliza√ß√£o da massa de dados para testes automatizados, √© poss√≠vel adicionar quantas linhas e dados quanto forem necess√°rio. Para isso, basta escrever os dados de usu√°rio em cada linha utilizando o separador ";". Support est√£o as classes de suporte para o projeto, considerando o relat√≥rio de evid√™ncias, datapool, gera√ß√£o de datas (alguns c√≥digos foram retirados de livros e material livre da internet). config.propeties armazena dados de ambiente, seja de homologa√ß√£o ou produ√ß√£o, respostas de api e o que for necess√°rio n√£o ficar evidente em hard code. Na pasta reports ser√£o armazenados screenshots e relatorios de evid√™ncia tanto para UI quanto para servi√ßo. O arquivo "SimularInvestimentoPoupancaRegressionTestSuite.jar" √© o execut√°vel dos casos de teste.  
+- appObjects representa o pacote com as classes que identificam elementos da interface web do portal. tasks: tarefas que atuam nos elementos da interface identificados. testCases pacote que define as classes principais dos casos de teste automatizados de UI. RegressiontestSuite conjunto que chama as classes de caso de teste que desejar. verificaitonPoints onde est„o as classes para validaÁ„o de dados e/ou elementos de interface, etc. Na pasta datapools est„o os arquivos necess·rios para a utilizaÁ„o da massa de dados para testes automatizados, È possÌvel adicionar quantas linhas e dados quanto forem necess·rio. Para isso, basta escrever os dados de usu·rio em cada linha utilizando o separador ";". Support est„o as classes de suporte para o projeto, considerando o relatÛrio de evidÍncias, datapool, geraÁ„o de datas (alguns cÛdigos foram retirados de livros e material livre da internet). config.propeties armazena dados de ambiente, seja de homologaÁ„o ou produÁ„o, respostas de api e o que for necess·rio n„o ficar evidente em hard code. Na pasta reports ser„o armazenados screenshots e relatorios de evidÍncia tanto para UI quanto para serviÁo. O arquivo "SimularInvestimentoPoupancaRegressionTestSuite.jar" È o execut·vel dos casos de teste.  
 
-## EXECU√á√ÉO
+## EXECU«√O
 
-Para executar o projeto √© muito f√°cil \o/ basta seguir os passos, dependendo do que preferir.
+Para executar o projeto È muito f·cil \o/ basta seguir os passos, dependendo do que preferir.
 
 Por linha de comando:
-- Clonar o reposit√≥rio: git clone https://github.com/jadersaldanha/WoopSicredi;
+- Clonar o repositÛrio: git clone https://github.com/jadersaldanha/WoopSicredi;
 - Na pasta do projeto: java -jar SimularInvestimentoPoupancaRegressionTestSuite.jar.
 
-Por UI:
-- Fazer o download do projeto Sicredi.com.br;
-- Na pasta do projeto Sicredi.com.br clicar duas vezes no arquivo "SimularInvestimentoPoupancaRegressionTestSuite.jar";
-- Aguarde a execu√ß√£o dos testes \o/;
-- Verifique a execu√ß√£o dos testes nas pastas "reports" e "screenshots".
+Por linha de comando com gradle: 
+- Clonar o repositÛrio: git clone https://github.com/jadersaldanha/WoopSicredi;
+- Navegar atÈ a pasta do projeto cd WoopSicredi;
+- gradle test ou ./gradlew test;
 
-Ah! pode ser que voc√™ n√£o consiga executar os testes ou aconte√ßa nada, nesse caso baixe o java!
+Por UI:
+- Fazer o download do projeto Sicredi.com.br e descompactar onde desejares;
+- Na pasta do projeto Sicredi.com.br clicar duas vezes no arquivo "SimularInvestimentoPoupancaRegressionTestSuite.jar";
+- Aguarde a execuÁ„o dos testes \o/;
+- Verifique a execuÁ„o dos testes nas pastas "reports" e "screenshots".
+
+Ah! pode ser que vocÍ n„o consiga executar os testes ou aconteÁa nada, nesse caso baixe o java!
 https://www.java.com/pt_BR/download/
